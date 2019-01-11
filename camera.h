@@ -13,7 +13,9 @@ vec3 random_in_unit_disk() {
 
 class camera {
     public:
-        camera(vec3 lookfrom, vec3 lookat, vec3 vup, float vfov, float aspect, float aperture, float focus_dist) {
+        camera(vec3 lookfrom, vec3 lookat, vec3 vup, float vfov,
+               float aspect, float aperture, float focus_dist) {
+
             lens_radius = aperture / 2;
 
             float theta = vfov*M_PI/180;
